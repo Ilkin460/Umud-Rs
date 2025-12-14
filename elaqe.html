@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMUD RS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .umud-orange-navbar {
+            background-color: #f7941d !important; 
+        }
+        
+        .umud-orange-btn {
+            background-color: #f7941d; 
+            color: white;
+            border: 1px solid #f7941d;
+            padding: 0.375rem 1.5rem; 
+        }
+        
+        .umud-orange-btn:hover {
+            background-color: #e68516; 
+        }
+        
+        .umud-orange-icon {
+            color: #f7941d; 
+        }
+
+        #main-navbar {
+            position: fixed; 
+            width: 100%;
+            z-index: 1030;
+            background-color: #f7941d !important; 
+        }
+        main{
+            background-color: #f3f4f6;
+        }
+        
+        .umud-contact-header {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .umud-form-input {
+            background-color: #f3f3f3; 
+            border: 1px solid #e1e1e1; 
+            padding: 0.75rem 1rem;
+            font-size: 0.95rem;
+            color: #555;  
+        }
+        
+        .umud-form-input::placeholder { 
+            color: #999;
+        }
+        
+        .umud-file-input {
+            display: none; 
+        }
+        
+        .umud-file-input + label {
+            display: inline-block;
+            cursor: pointer;
+            background-color: #f3f3f3;
+            color: #555;
+            padding: 0.375rem 0.75rem;
+            border-radius: 0.25rem;
+            border: 1px solid #ced4da;
+        }
+        
+        .umud-file-input + label {
+            background-color: #f3f3f3;
+            border: none;
+            color: #555;
+            padding: 0;
+            cursor: default; 
+        }
+        
+        .umud-contact-info a {
+            color: #555;
+            text-decoration: none;
+        }
+        .umud-contact-info a:hover {
+            color: #f7941d;
+        }
+        
+        .umud-contact-info li {
+            font-size: 1.05rem;
+            color: #555;
+        }
+        
+        .umud-contact-info .invisible {
+            visibility: hidden; 
+        }
+        </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg umud-orange-navbar fixed-top" id="main-navbar">
+            <div class="container-fluid container-xl">
+                <img src="img/loog50.png" alt="UMUD RS Logo" class="btn d-inline-block align-text-top" height="55">
+                <a class="navbar-brand umud-logo-text" href="index.html">UMUD RS</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav umud-nav-menu">
+                        <li class="nav-item"><a class="nav-link" href="haqqimizda.html">Haqqımızda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="elaqe.html">Əlaqə</a></li>
+                        <li class="nav-item"><a class="nav-link" href="musteri.html">Müştərilər</a></li>
+                        <li class="nav-item"><a class="nav-link" href="xidmet.html">Xidmətlər</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid container-xl py-5 mt-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-xl-8">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body p-4 p-md-5">
+                            <div class="row">
+                                <div class="col-lg-4 mb-4 mb-lg-0">
+                                    <h3 class="umud-contact-header mb-4">ƏLAQƏ MƏLUMATLARI</h3>
+                                    <ul class="list-unstyled umud-contact-info">
+                                        <li class="mb-3">
+                                            <i class="fa-solid fa-envelope me-2 umud-orange-icon"></i> 
+                                            <a href="mailto:info@umudrs.az">info@umudrs.az</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <i class="fa-solid fa-phone me-2 umud-orange-icon"></i> 
+                                            +994 50 653 02 02
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-phone me-2 umud-orange-icon invisible"></i> 
+                                            +994 50 210 98 67
+                                        </li>
+                                    </ul>
+                                </div>
+    
+                                <div class="col-lg-8">
+                                    <form action="#" method="POST" enctype="multipart/form-data">
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control umud-form-input" placeholder="Adınız*" aria-label="Adınız" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control umud-form-input" placeholder="Soyadınız*" aria-label="Soyadınız" required>
+                                            </div>
+                                            
+                                            <div class="col-md-6">
+                                                <input type="email" class="form-control umud-form-input" placeholder="E-poçtunuz*" aria-label="E-poçtunuz" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="tel" class="form-control umud-form-input" placeholder="Telefon Nömrəniz*" aria-label="Telefon Nömrəniz" required>
+                                            </div>
+                                            
+                                            <div class="col-12">
+                                                <input type="text" class="form-control umud-form-input" placeholder="Mövzunuz" aria-label="Mövzunuz">
+                                            </div>
+    
+                                            <div class="col-12">
+                                                <textarea class="form-control umud-form-input" placeholder="Mesajınız*" rows="4" aria-label="Mesajınız" required></textarea>
+                                            </div>
+    
+                                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                                <label for="fileUpload" class="form-label mb-0">
+                                                    Fayl əlavə edin
+                                                </label>
+                                                <input type="file" id="fileUpload" class="umud-file-input">
+                                                
+                                                <button type="submit" class="btn umud-orange-btn ms-auto">Göndər</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="umud-footer text-white pt-5 pb-3">
+        <div class="container-fluid container-xl">
+            <div class="row text-center mb-4">
+                <div class="col-12">
+                    <ul class="list-inline umud-footer-nav">
+                        <li class="list-inline-item"><a href="#">Ana Səhifə</a></li>
+                        <li class="list-inline-item"><a href="#">Haqqımızda</a></li>
+                        <li class="list-inline-item"><a href="#">Əlaqə</a></li>
+                        <li class="list-inline-item"><a href="#">Xidmətlər</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="row text-center mb-4">
+                <div class="col-12">
+                    <a href="mailto:info@umudrs.az" class="umud-email-link">
+                        <i class="fa-solid fa-envelope me-2"></i> e-poçt yazın.
+                    </a>
+                </div>
+            </div>
+            
+            <hr class="umud-footer-divider">
+
+            <div class="row text-center mt-3">
+                <div class="col-12 umud-copyright">
+                    © umud rs 2025 bütün hüquqları qorunur.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
